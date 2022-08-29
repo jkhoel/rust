@@ -4,7 +4,7 @@ These are my notes and solutions as I am learning Rust 🦀
 
 ## Notes
 
-Have a look at the wiki! 📝
+Have a look at the [wiki](https://github.com/jkhoel/rust/wiki)! 📝
 
 ## Links to Courses:
 - [The Rust Book](https://doc.rust-lang.org/book/)
