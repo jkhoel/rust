@@ -15,5 +15,8 @@
 
 .editorconfig
 
+# Ignore the Wiki as that is its own repo
+wiki/**
+
 # Files from macOS
 .DS_Store
