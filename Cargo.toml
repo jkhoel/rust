@@ -1,0 +1,14 @@
+[package]
+name = "rust-notes"
+version = "0.1.0"
+edition = "2021"
+
+# This document is only to get linters etc. to work at root level
+
+[dependencies]
+
+[[bin]]
+name="rust-notes"
+path="excercises/rustbook/1-hello-world/main.rs"
+test = false
+bench = false
