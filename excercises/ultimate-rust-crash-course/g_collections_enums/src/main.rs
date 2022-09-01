@@ -12,9 +12,10 @@
 
 // SOLUTION:
 enum Shot {
-    Bullseye, Hit(f64), Miss
+    Bullseye,
+    Hit(f64),
+    Miss,
 }
-
 
 impl Shot {
     // Here is a method for the `Shot` enum you just defined.
@@ -29,7 +30,7 @@ impl Shot {
         match self {
             Shot::Bullseye => 5,
             // Shot::Hit(x) => if x < 3.0 { 2 } else {1},       // optional way of doing it
-            Shot::Hit(x) if x < 3.0 => 2,                  // solving it using guards instead
+            Shot::Hit(x) if x < 3.0 => 2, // solving it using guards instead
             Shot::Hit(x) => 1,
             Shot::Miss => 0,
         }
@@ -66,15 +67,13 @@ fn main() {
         shots.push(shot);
     }
 
-
-
     // 3. Finally, loop through each shot in shots and add its points to total
     let mut total = 0;
 
-
     // SOLUTION:
-    for shot in shots { total += shot.points(); }
-
+    for shot in shots {
+        total += shot.points();
+    }
 
     println!("Final point total is: {}", total);
 }
@@ -95,9 +94,9 @@ impl Coord {
             "coord is {:.1} away, at ({:.1}, {:.1})",
             self.distance_from_center(),
             self.x,
-            self.y);
+            self.y
+        );
     }
-
 }
 
 // Generate some random coordinates
