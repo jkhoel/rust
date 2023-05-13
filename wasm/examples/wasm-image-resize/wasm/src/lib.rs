@@ -1,7 +1,7 @@
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
-pub fn add(left: usize, right: usize) -> usize {
+pub fn sum(left: usize, right: usize) -> usize {
     left + right
 }
 
@@ -16,7 +16,7 @@ mod tests {
 
     #[test]
     fn it_can_add() {
-        let result = add(2, 2);
+        let result = sum(2, 2);
         assert_eq!(result, 4);
     }
 

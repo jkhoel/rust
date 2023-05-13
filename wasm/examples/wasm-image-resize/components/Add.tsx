@@ -16,7 +16,7 @@ export default function Add({ arg1, arg2 }: Props) {
 
   return (
     <>
-      The sum of {arg1} + {arg2} is {ctx.wasm.add(arg1, arg2)}
+      The sum of {arg1} + {arg2} is {ctx.wasm.sum(arg1, arg2)}
     </>
   );
 }
