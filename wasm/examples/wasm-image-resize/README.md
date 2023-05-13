@@ -12,6 +12,14 @@ Wasm-Pack is part of the [rust-wasm](https://github.com/rustwasm/team) group. Yo
 
 It then uses a small NextJS webapp to demo the WASM functions we have written.
 
+## Usage
+
+### Client-side
+This project shows two patterns for using WebAssembly modules client-side with Next;
+
+- Using a Context to share the WASM library to any children
+- Importing and initializing (`wasm.default()`) the library inside the same component
+
 ## Development: WASM
 
 The WASM module was initialized as a lib. So it can not work on its own. If we have a look at the Cargo.toml inside the `./wasm` directory, we see that it is actually a `cdylib`; C dynamic library.

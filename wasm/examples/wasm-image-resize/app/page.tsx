@@ -1,8 +1,9 @@
 import Add from "@/components/Add";
 import Greeting from "@/components/Greeting";
+import GreeterWithNoContext from "@/components/GreeterWithNoContext";
 import { WASMContextProvider } from "@/contexts/wasm-context";
 
-export default function Home({ children }: { children: React.ReactNode }) {
+export default function Home() {
   return (
     <main className="flex min-h-screen flex-col p-24">
       <h1>Welcome!</h1>
@@ -12,6 +13,9 @@ export default function Home({ children }: { children: React.ReactNode }) {
         </p>
         <Add arg1={2} arg2={4} />
       </WASMContextProvider>
+      <div className="my-4">
+        <GreeterWithNoContext />
+      </div>
     </main>
   );
 }
