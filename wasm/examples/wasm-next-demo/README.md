@@ -1,9 +1,13 @@
-# WASM Module for quickly resizing images
+# WASM in NextJS Demo Project
 
-Shows uploading and resizing an image client-side, but could just as well be ran on a node backend by changing build flags.
-The resizing WASM library is built in rust and can be imported by any process that can run JavaScript.
+This project demos a WASM module with functions for creating a `greeting` and to `sum` numbers.
 
-(At some point in the future anyway...)
+The project demos two patterns for using WebAssembly modules `clientside` with Next;
+
+- Using a Context to share the WASM library to any children
+- Importing and initializing (`wasm.default()`) the library inside the same component
+
+The WASM module could be built to target `nodejs` as well.
 
 ## Tooling
 
@@ -11,14 +15,6 @@ This project uses [Wasm-Pack](https://github.com/rustwasm/wasm-pack) to build ru
 Wasm-Pack is part of the [rust-wasm](https://github.com/rustwasm/team) group. You can find more info by visiting that repo!
 
 It then uses a small NextJS webapp to demo the WASM functions we have written.
-
-## Usage
-
-### Client-side
-This project shows two patterns for using WebAssembly modules client-side with Next;
-
-- Using a Context to share the WASM library to any children
-- Importing and initializing (`wasm.default()`) the library inside the same component
 
 ## Development: WASM
 
