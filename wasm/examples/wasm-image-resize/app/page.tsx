@@ -11,7 +11,7 @@ export default function Home() {
         <p>
           <Greeting name="NextJS and WebAssembly" />
         </p>
-        <Add arg1={2} arg2={4} />
+        <Add />
       </WASMContextProvider>
       <div className="my-4">
         <GreeterWithNoContext />
